@@ -21,7 +21,7 @@ export const getStaticPaths = async () => {
 // データをテンプレートに受け渡す部分の処理
 export const getStaticProps = async (context) => {
   const id = context.params.id;
-  const data = await client.get({ endpoint: 'blog', content: id });
+  const data = await client.get({ endpoint: "blog", contentid: id });
 
   return {
     props: {
