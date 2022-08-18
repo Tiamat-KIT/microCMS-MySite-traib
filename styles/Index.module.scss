@@ -2,6 +2,12 @@
   color: rgb(243, 0, 0);
 }
 
+.bg {
+  background: linear-gradient(#05fbff, #1e00ff);
+}
+
+
+/*
 .bg_pattern {
   position: fixed;
   top: 0;
@@ -12,9 +18,8 @@
   z-index: -1;
 }
 .Paper {
-  --big-horizontal-line-color: rgba(0, 0, 0, 0.3)
-  background-image: linear-gradient(var(--big-horizontal-line-color) 4px, transparent 4px),
-    linear-gradient(90deg, rgba(54, 192, 0, 0.699) 4px, transparent 4px),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3) 4px, transparent 4px),
+    linear-gradient(90deg, rgba(122, 122, 122, 0.699) 4px, transparent 4px),
     linear-gradient(rgba(255, 251, 29, 0.3) 2px, transparent 2px),
     linear-gradient(
       90deg,
@@ -24,3 +29,5 @@
   background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
   background-position: -4px -4px, -4px -4px, -2px -2px, -2px -2px;
 }
+
+方眼紙のやつ*/

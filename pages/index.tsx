@@ -4,7 +4,7 @@ import styles from '../styles/Index.module.scss';
 
 export default function Home({ blog }) {
   return (
-    <div className={`${styles.bg_pattern} ${styles.Paper}`}>
+    <div>
       <ul>
         {blog.map((blog) => (
           <li key={blog.id}>
@@ -28,3 +28,6 @@ export const getStaticProps = async () => {
     },
   };
 };
+
+/*`${styles.bg_pattern} ${styles.Paper}`*/
+//二重のスタイル指定をしたいときはこうする
