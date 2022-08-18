@@ -4,7 +4,7 @@ import styles from '../styles/Index.module.scss';
 
 export default function Home({ blog }) {
   return (
-    <div>
+    <div className={`${styles.bg_pattern} ${styles.Paper}`}>
       <ul>
         {blog.map((blog) => (
           <li key={blog.id}>
