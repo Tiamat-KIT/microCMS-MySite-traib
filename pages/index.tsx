@@ -1,5 +1,6 @@
-import Link from "next/link";
-import { client } from "../libs/client";
+import Link from 'next/link';
+import { client } from '../libs/client';
+import styles from '../../styles/Index.module.scss';
 
 export default function Home({ blog }) {
   return (
@@ -19,7 +20,7 @@ export default function Home({ blog }) {
 
 // データをテンプレートに受け渡す部分の処理を記述します
 export const getStaticProps = async () => {
-  const data = await client.get({ endpoint: "blog" });
+  const data = await client.get({ endpoint: 'blog' });
 
   return {
     props: {
