@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { client } from '../libs/client';
-import styles from '../../styles/Index.module.scss';
+import styles from '../styles/Index.module.scss';
 
 export default function Home({ blog }) {
   return (
@@ -9,7 +9,7 @@ export default function Home({ blog }) {
         {blog.map((blog) => (
           <li key={blog.id}>
             <Link href={`/blog/${blog.id}`}>
-              <a>{blog.title}</a>
+              <a className={styles.pagetitle}>{blog.title}</a>
             </Link>
           </li>
         ))}
