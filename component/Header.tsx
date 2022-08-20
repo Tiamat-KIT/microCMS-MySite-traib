@@ -15,10 +15,10 @@ const Header = () => {
         <div className={styles['header-inner']}>
           <Link href="/">
             <Image
-              src="https://pbs.twimg.com/media/Fal2Aj3aMAA-Nbl?format=png&name=small"
+              src="https://pbs.twimg.com/media/FamdMI4UsAAPHxw?format=png&name=small"
               className={styles.logo}
-              width="65px"
-              height="65px"
+              width="150px"
+              height="150px"
             />
           </Link>
           <nav className={styles['header-nav']}>
