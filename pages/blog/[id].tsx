@@ -7,9 +7,6 @@ import Error from '../404';
 /*副作用として、コンテンツがない場合にもページのレンダリング処理が通ってしまうので、コンポーネント側でエラーハンドリング*/
 
 export default function BlogId({ blog }) {
-  if (!blog) {
-    return <Error />;
-  }
   return (
     <div>
       <Header />
