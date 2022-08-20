@@ -46,3 +46,6 @@ export const getStaticProps = async () => {
 
 /*`${styles.bg_pattern} ${styles.Paper}`*/
 //二重のスタイル指定をしたいときはこうする
+
+/* endpointにcategories を指定して、カテゴリーコンテンツを取得していること。categoryData.contentsが配列で、これをcategoryとしてpropsに渡す。
+あとは、ブログコンテンツと同じで配列データに対してmapしてブラウザ上に表示*/
