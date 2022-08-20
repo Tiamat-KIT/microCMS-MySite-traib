@@ -35,7 +35,7 @@ export default function Home({ blog }) {
 export const getStaticProps = async () => {
   const data = await client.get({ endpoint: 'blog' });
   // カテゴリコンテンツ取得
-  const categoryData = await client.get({ endpoint: 'categoryes' });
+  const categoryData = await client.get({ endpoint: 'categories' });
   return {
     props: {
       blog: data.contents,
