@@ -17,8 +17,8 @@ const Header = () => {
             <Image
               src="https://pbs.twimg.com/media/FamdMI4UsAAPHxw?format=png&name=small"
               className={styles.logo}
-              width="125px"
-              height="125px"
+              width="110px"
+              height="110px"
             />
           </Link>
           <nav className={styles['header-nav']}>
