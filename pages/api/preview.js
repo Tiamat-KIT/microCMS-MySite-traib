@@ -1,5 +1,5 @@
 // プレビュー用関数の作成
-import fetch from 'node-fetch';
+/*import fetch from 'node-fetch';
 
 export default async (req, res) => {
   if (!req.query.slug) {
@@ -23,7 +23,7 @@ export default async (req, res) => {
   });
   res.writeHead(307, { Location: `/${content.id}` });
   res.end(`Preview mode enabled`);
-};
+};*/
 
 /* Next.jsにはサーバーレス関数を起動できるAPI Routes機能がある。
 `/pages/api/`以下のファイルは
