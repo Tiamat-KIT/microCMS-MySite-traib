@@ -2,6 +2,8 @@ import Link from 'next/link';
 import { client } from '../../libs/client';
 import styles from '../../styles/Home.module.scss';
 
+// 各カテゴリーページでブログコンテンツをフィルタリング
+
 export default function CategoryId({ blog }) {
   //カテゴリに紐づいたコンテンツがない場合に表示
   if (blog.length === 0) {
@@ -43,3 +45,7 @@ export const getStaticProps = async (context) => {
     },
   };
 };
+
+/* filtersパラメータを使ってフィルタリング。
+今回のケースのように、単数のコンテンツ参照で使用できるのは [equals]のみ。
+content_idを指定することで紐付いたコンテンツを取得することができる*/
