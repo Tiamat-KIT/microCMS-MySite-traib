@@ -2,7 +2,7 @@ export const getStaticProps = async (context) => {
   const slug = context.params?.slug;
   const draftKey = context.previewData?.draftKey;
   const content = await fetch(
-    `https://xxxxxx.microcms.io/api/v1/blog/${slug}${
+    `https://tiamat.microcms.io/api/v1/blog/${slug}${
       draftKey !== undefined ? `?draftKey=${draftKey}` : ''
     }`,
     { headers: { 'X-MICROCMS-API-KEY': process.env.apiKey || '' } }
