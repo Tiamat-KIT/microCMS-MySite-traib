@@ -3,10 +3,12 @@ import { client } from '../libs/client';
 import styles from '../styles/Index.module.scss';
 import Header from '../component/Header';
 import Footer from '../component/Footer';
+import Clear from '../component/CookieClear'
 
 export default function Home({ blog }) {
   return (
     <div>
+      <Clear />
       <Header />
       <ul>
         {blog.map((blog) => (
