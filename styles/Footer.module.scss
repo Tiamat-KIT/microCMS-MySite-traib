@@ -1,0 +1,25 @@
+.footer01 {
+  padding: 30px;
+}
+.footer01 a {
+  color: #808080;
+  text-decoration: none;
+}
+.footer01 a:hover {
+  text-decoration: underline;
+}
+.footer01 .menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer01 .menu li {
+  margin: 0;
+  padding: 0 20px 0 0;
+}
+.footer01 .copyright {
+  margin: 0;
+  padding: 20px 0 0 0;
+}

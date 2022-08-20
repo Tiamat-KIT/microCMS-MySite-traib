@@ -1,18 +1,24 @@
 import { client } from '../../libs/client';
 import styles from '../../styles/Home.module.scss';
+import Header from '../../component/Header';
+import Footer from '../../component/Footer';
 
 export default function BlogId({ blog }) {
   return (
-    <main className={styles.main}>
-      <h1 className={styles.title}>{blog.title}</h1>
-      <p className={styles.publishedAt}>{blog.publishedAt}</p>
-      <div
-        dangerouslySetInnerHTML={{
-          __html: `${blog.body}`,
-        }}
-        className={styles.post}
-      />
-    </main>
+    <div>
+      <Header />
+      <main className={styles.main}>
+        <h1 className={styles.title}>{blog.title}</h1>
+        <p className={styles.publishedAt}>{blog.publishedAt}</p>
+        <div
+          dangerouslySetInnerHTML={{
+            __html: `${blog.body}`,
+          }}
+          className={styles.post}
+        />
+      </main>
+      <Footer />
+    </div>
   );
 }
 
