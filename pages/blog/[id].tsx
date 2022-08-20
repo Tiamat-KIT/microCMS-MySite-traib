@@ -33,8 +33,10 @@ export const getStaticPaths = async () => {
   const data = await client.get({ endpoint: 'blog' });
 
   const paths = data.contents.map((content) => `/blog/${content.id}`);
-  return { paths, fallback: true };
-  /* 返り値のオブジェクトで `fallback: false` としてしまうと、公開済みのページは良いが下書き状態のページは未生成のため、`/api/preview` からのリダイレクト時に404となってしまう。 よって、ここでは `fallback: true` と指定*/
+  return { paths, fallback: false };
+  /* 返り値のオブジェクトで `fallback: false` としてしまうと、公開済みのページは良いが下書き状態のページは未生成のため、`/api/preview` からのリダイレクト時に404となってしまう。 よって、ここでは `fallback: true` と指定
+  
+  なんか動かないんで却下*/
 };
 
 // データをテンプレートに受け渡す部分の処理
