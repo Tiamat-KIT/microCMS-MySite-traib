@@ -7,12 +7,18 @@ import Error from '../404';
 /*副作用として、コンテンツがない場合にもページのレンダリング処理が通ってしまうので、コンポーネント側でエラーハンドリング*/
 
 export default function BlogId({ blog }) {
+  //const datePattern = /^\d{4}-?\d{2}-?\d{2}[A-Z]\d{2}:?/d{2}:?\d{2}.?\d{3}.?[A-Z]$/g;
+
+  const date = blog.publishedAt;
+
+  const dateText = date.match(/\d{4}-?\d{2}-?\d{2}/);
+
   return (
     <div>
       <Header />
       <main className={styles.main}>
         <h2 className={styles.title}>{blog.title}</h2>
-        <p className={styles.publishedAt}>{blog.publishedAt}</p>
+        <p className={styles.publishedAt}>{dateText[0]}</p>
         <p className="category">{blog.category && `${blog.category.name}`}</p>
         <div
           dangerouslySetInnerHTML={{
