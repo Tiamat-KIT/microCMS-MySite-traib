@@ -11,14 +11,17 @@ export default function BlogId({ blog }) {
 
   const date = blog.publishedAt;
 
-  const dateText = date.match(/\d{4}-?\d{2}-?\d{2}/);
+  const ymd = date.match(/\d{4}-?\d{2}-?\d{2}/);
+  const hms = date.match(/\d{2}:?\d{2}:?\d{2}/);
+
+  const dateData = `${ymd} ${hms}`;
 
   return (
     <div>
       <Header />
       <main className={styles.main}>
         <h2 className={styles.title}>{blog.title}</h2>
-        <p className={styles.publishedAt}>{dateText[0]}</p>
+        <p className={styles.publishedAt}>{dateData}</p>
         <p className="category">{blog.category && `${blog.category.name}`}</p>
         <div
           dangerouslySetInnerHTML={{
