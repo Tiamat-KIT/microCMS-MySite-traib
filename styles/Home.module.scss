@@ -12,6 +12,17 @@
 }
 
 .post {
+  --bg-color: rgba(255, 255, 255, 0.3);
+  --bg-color2: rgba(190, 190, 190, 0.3);
+
+  background: repeating-linear-gradient(
+    45deg,
+    var(--bg-color),
+    var(--bg-color) 15px,
+    var(--bg-color2) 0,
+    var(--bg-color2) 30px
+  );
+
   & > h1 {
     font-size: 30px;
     font-weight: bold;
