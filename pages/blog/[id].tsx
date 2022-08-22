@@ -7,7 +7,6 @@ import Error from '../404';
 /*副作用として、コンテンツがない場合にもページのレンダリング処理が通ってしまうので、コンポーネント側でエラーハンドリング*/
 
 export default function BlogId({ blog }) {
-  //const datePattern = /^\d{4}-?\d{2}-?\d{2}[A-Z]\d{2}:?/d{2}:?\d{2}.?\d{3}.?[A-Z]$/g;
 
   const date = blog.publishedAt;
 

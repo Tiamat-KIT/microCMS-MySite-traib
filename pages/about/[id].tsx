@@ -17,17 +17,18 @@ export default function About({ person }) {
 
 // 静的生成のためのパス指定
 export const getStaticPaths = async () => {
-  const data = await client.get({ endpoint: 'person' });
+  const IntroData = await client.get({ endpoint: 'person' });
 
-  const paths = data.contents.map((content) => `/about/${content.id}`);
+  const paths = IntroData.contents.map((content) => `/about/${content.id}`);
   return { paths, fallback: false };
 };
 
 // データをテンプレートに受け渡す部分の処理
 export const getStaticProps = async (context) => {
+  const id = context.params.id;
   const IntroData = await client.get({
     endpoint: 'person',
-    contentId: 'whatfill',
+    contentId: id,
   });
 
   return {
