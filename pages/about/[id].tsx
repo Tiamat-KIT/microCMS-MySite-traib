@@ -27,7 +27,7 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async (context) => {
   const IntroData = await client.get({
     endpoint: 'person',
-    contentid: 'whatfill',
+    contentId: 'whatfill',
   });
 
   return {
