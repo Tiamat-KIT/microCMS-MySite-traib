@@ -28,12 +28,14 @@ const Header = () => {
                   Twitter
                 </li>
               </Link>
-              <Link href="#">
-                <li className={`${styles['header-nav-item']} `}>Works</li>
+              <Link href="/about">
+                <li className={`${styles['header-nav-item']} ${styles.select}`}>
+                  About
+                </li>
               </Link>
-              <Link href="#">
+              {/*<Link href="#">
                 <li className={`${styles['header-nav-item']} `}>Contract</li>
-              </Link>
+  </Link>*/}
             </ul>
             {/*<div className={styles['header-ham']}>
               <div className={styles['menu2']} />

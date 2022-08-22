@@ -35,7 +35,7 @@ export default function BlogId({ blog }) {
   );
 }
 
-// 静的生成のためのパス指定r
+// 静的生成のためのパス指定
 export const getStaticPaths = async () => {
   const data = await client.get({ endpoint: 'blog' });
 
