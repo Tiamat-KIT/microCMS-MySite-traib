@@ -13,10 +13,14 @@ export default function About() {
       <Header />
       {AboutParam('Fill')}
       <div className={styles.post}>
-        <h4></h4>
-        <h4></h4>
-        <h4></h4>
-        <h4></h4>
+        <h4>幼少期(0~3歳頃)から中学まで</h4>
+        <p>編集中</p>
+        <h4>高校生になり、プログラミングに出会うまで</h4>
+        <p>編集中</p>
+        <h4>綾急技研に入るきっかけ</h4>
+        <p>編集中</p>
+        <h4>大学に入るきっかけ</h4>
+        <p>編集中</p>
       </div>
       <Footer />
     </div>
