@@ -12,6 +12,7 @@
     "@fortawesome/free-brands-svg-icons": "^6.1.2",
     "@fortawesome/free-solid-svg-icons": "^6.1.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@vanilla-extract/css": "^1.7.3",
     "microcms-js-sdk": "^2.2.1",
     "next": "^12.1.0",
     "react": "17.0.1",

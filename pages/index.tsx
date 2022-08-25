@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { client } from '../libs/client';
 import styles from '../styles/Index.module.scss';
+import { container } from '../vanilla-style/Index.css';
 import Header from '../component/Header';
 import Footer from '../component/Footer';
 
